@@ -7,7 +7,7 @@ from monai.transforms import (Compose, LoadImage, EnsureChannelFirst,
 														ScaleIntensity, Resize)
 
 
-def preprocess(img_path="../data/1.2.840.113713.17.1538.156204584798095915006091931534607431491.jpg"):
+def preprocess(img_path="../data/breast.jpg"):
 
 	transforms = Compose([LoadImage(image_only=True), 
 												EnsureChannelFirst(channel_dim=2),
